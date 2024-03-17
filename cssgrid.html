@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Exempel</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 200px auto; /* Två kolumner: sidebar och innehåll */
+            grid-template-rows: auto 1fr auto; /* Tre rader: header, innehåll, footer */
+            height: 100vh; /* Hela fönstrets höjd */
+        }
+        .header {
+            grid-column: 1 / -1; /* Börjar från kolumn 1 och sträcker sig över alla kolumner */
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+        .sidebar {
+            background-color: #ddd;
+            padding: 10px;
+        }
+        .content {
+            background-color: #eee;
+            padding: 10px;
+        }
+        .footer {
+            grid-column: 1 / -1; /* Börjar från kolumn 1 och sträcker sig över alla kolumner */
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="content">Innehåll</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

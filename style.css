@@ -1,0 +1,205 @@
+body {
+    background-color : #87CEEB; 
+    margin: auto 0;
+}
+/*---------Nav bar--------------*/
+.nav {
+    background-color: #f0f0f0; 
+    height: 40px;
+}
+
+.nav a {
+    margin: 5px;
+    margin-top: 10px;
+}
+
+.main-nav {
+    padding: 10px;
+}
+
+
+/*---------Hero sektion --------------*/
+.hero-section {
+    /* Texterna plaseras i center*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    /*backgrund bilden */
+    background: url('images/store.png') no-repeat fixed; /* Lägg till bakgrundsbilden här */
+    height: 100vh; /* Använd 100% av fönstrets höjd */
+    background-size: 100%; /* Täcker hela hero-sektionen med bakgrundsbilden */
+    background-position: center; /* Centrerar bakgrundsbilden */
+    background-position: fixed;
+}
+
+/* För mindre skärmar, justera storleken på bakgrundsbilden */
+@media only screen and (max-width: 1200px) {
+    .hero-section {
+        height: 90vh; /* Använd 100% av fönstrets höjd */
+    }
+}
+
+/* För ännu mindre skärmar, som telefoner */
+@media only screen and (max-width: 900px) {
+    .hero-section {
+        height: 70vh; /* Använd 40% av fönstrets höjd för telefoner */
+    }
+}
+/* För ännu mindre skärmar, som telefoner */
+@media only screen and (max-width: 500px) {
+    .hero-section {
+        height: 57vh; /* Använd 40% av fönstrets höjd för telefoner */
+    }
+}
+.hero-section h1 {
+    text-align: top;
+    color: green; /* Färgen på texten */
+    margin-bottom: 20px; /* Lite avstånd under texten */
+    font-weight: 800; 
+}
+
+/* -----------Product-------*/
+.product-container {
+    display: grid;
+    grid-template-columns: 200px auto; /* Två kolumner: sidebar och innehåll */
+    grid-template-rows: auto 1fr auto; /* Tre rader: header, innehåll, footer */
+}
+.product-header {
+    grid-column: 1 / -1; /* Börjar från kolumn 1 och sträcker sig över alla kolumner */
+    padding: 10px;
+}
+.product-sidebar {
+    padding: 10px;
+}
+.product-content {
+    display: grid; 
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding: 10px;
+}
+.product-footer {
+    grid-column: 1 / -1; /* Börjar från kolumn 1 och sträcker sig över alla kolumner */
+    color: #fff;
+    padding: 10px;
+}
+/*----About sektion --------*/
+#about {
+    margin: auto 0;
+    background-color: $primary-color;
+    background-image: linear-gradient(
+      135deg,
+      green 0%,
+      blue 100%
+    );
+    color: $white-color;
+    height: 120vh;
+    border-top: 0px;
+   // -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    //clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    padding-bottom: 10%;
+}
+h2 {
+    text-align: center;
+    color: white;
+}
+.about-wrapper {
+    margin-top: 60px;
+}
+
+.about-wrapper__image {
+    display: flex;
+    justify-content: center; /* Placera innehållet horisontellt i mitten */
+    align-items: center; /* Placera innehållet vertikalt i mitten */
+}
+
+/* Justera storleken på bilden på mobilskärmar */
+@media only screen and (max-width: 800px) {
+    .about-wrapper__image img {
+        width: 70%; /* Justera bredden till 70% på mobilskärmar */
+    }
+}
+
+.paragraf-box {
+    background-color: #f0f0f0;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 20px; 
+    margin: 0 auto; 
+    width: 90%;
+}
+
+.about-wrapper__info-text {
+    @media only screen and (max-width: 900px) {
+        font-size: 0.7rem;
+    }
+}
+.form-label-subscribe{
+  font-weight: bold; /* Gör texten fet */
+    font-size: 1.5rem; /* Öka textstorleken */
+    color: white;
+    @media only screen and (max-width: 900px) {
+        font-size: 0.7rem;
+    }
+}
+
+/*------------ Kontakt sektion --------- */
+.contact-section {
+    margin: 0 auto;
+    margin-top: 0 auto;
+    /* Texterna placeras i center */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* Bakgrundsbilden */
+    background: url('images/contact.png') fixed; /* Lägg till bakgrundsbilden här */
+    height: 100vh; /* Använd 100% av fönstrets höjd */
+    background-size: 100%; /* Täcker hela hero-sektionen med bakgrundsbilden */
+    background-position: center; /* Centrerar bakgrundsbilden */
+    background-position: fixed;
+
+
+}
+.paragraf-box-contact {
+  width: 80%;
+  background-color: rgba(128, 128, 128, 0.6);;
+
+}
+
+/* Styla label för formular */
+.form-label {
+    font-weight: bold; /* Gör texten fet */
+    font-size: 2.2rem; /* Öka textstorleken */
+    color: blue;
+    margin: 15px;
+    @media only screen and (max-width: 700px) {
+
+    font-size: 1.1rem; /* Öka textstorleken */
+    }
+}
+
+/* Styla input-fälten */
+.form-control {
+    width: 50%; /* Anpassa bredden efter behov */
+    margin-left: 30%;
+}
+
+/* Styla skicka-knappen */
+.btn {
+    background: blue;
+    color: white; /* Ändra textfärg till vit */
+    font-weight: bold; /* Gör texten fet */
+    padding: 10px 20px; /* Lägg till lite utrymme runt texten */
+    font-size: 1.2rem; /* Öka textstorleken */
+    margin: 10px; /* Lägg till lite avstånd ovanför knappen */
+}
+
+/*** Footer ---- */
+
+.footer {
+  text-align: center; /* Centrerar texten */
+  padding: 10px 0; /* Lägger till 10 pixlar padding över och under texten */
+}

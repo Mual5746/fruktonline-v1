@@ -1,0 +1,25 @@
+h1 {
+    color: blue; 
+}
+.image-gallery {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+
+img {
+    width: 250px;
+    height: auto;
+}
+
+ img {
+    margin: 10px;
+    transition: transform .2s;
+    justify-content : center;
+
+
+}
+
+img:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
