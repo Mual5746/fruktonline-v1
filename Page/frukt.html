@@ -1,38 +1,173 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../style/fruktstyle.css">
-    <title>Frukter</title>
-</head>
-<body>
-    <div class="nav" >
-        <div class="main-nav">
-            <a href="../index.html">Hem</a>
-            <a >Frukt</a>
-            <a href="./register.html">Register</a>
-        </div>
-     </div>
-    <h1>Här hittar ni lista över våra utbud av frukter</h1>
-
-    <div class="image-gallery">
-        <div class="image-item">
-            <img src="../images/banan.webp" alt="" >
-        </div>
-        <div class="image-item">
-            <img src="../images/pinklady.png" alt="pnklady">
-        </div>
-        <div class="image-item">
-            <img src="../images/Granny.webp" alt="">
-        </div>
-        <div class="image-item">
-            <img src="../images/Apelsin.png" alt="apelsin">
-        </div>
-        <div class="image-item">
-            <img src="../images/vindruv.png" alt="">
-        </div>
-    </div>
-</body>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FruktOnline</title>
+        <!--Adda icon för hemsidan samma som logon-->
+        <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../style/fruktstyle.css">
+    </head>
+    <body>
+        <!-- Navbar seketion skapat med botrap och semantic tag: nav-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+            <img src="../images/logo.png" alt="" height="40" width="70">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="">Frukt</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="register.html">Register</a>
+                </li>
+                <li class="d-flex">
+                        <a class="nav-link active" aria-current="page" href="#contact">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+        <section class="container content-section">
+            <h2 class="section-header">FRUKT</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Banan</span>
+                    <img
+                        alt="Profile Image"
+                        class="shop-item-image img-fluid rounded shadow-lg"
+                        src="../images/banan.webp"
+                        alt="Profile Image"
+                      />
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">12.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">KÖP</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Pink Lady</span>
+                    <img
+                        alt="Profile Image"
+                        class="shop-item-image img-fluid rounded shadow-lg"
+                        src="../images/pinklady.png"
+                        alt="Profile Image"
+                      />
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">14.99</span>
+                        <button class="btn btn-primary shop-item-button"type="button">KÖP</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Granny</span>
+                    <img
+                        alt="Profile Image"
+                        class="shop-item-image img-fluid rounded shadow-lg"
+                        src="../images/Granny.webp"
+                        alt="Profile Image"
+                      />
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">9.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">KÖP</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Apelsin</span>
+                    <img
+                        alt="Profile Image"
+                        class="shop-item-image img-fluid rounded shadow-lg"
+                        src="../images/Apelsin.png"
+                        alt="Profile Image"
+                      />
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">KÖP</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">GRÖNSAKER</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Vindruv</span>
+                    <img
+                        alt="Profile Image"
+                        class="shop-item-image img-fluid rounded shadow-lg"
+                        src="../images/vindruv.png"
+                        alt="Profile Image"
+                      />
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">KÖP</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Vindruv</span>
+                    <img
+                        alt="Profile Image"
+                        class="shop-item-image img-fluid rounded shadow-lg"
+                        src="../images/vindruv.png"
+                        alt="Profile Image"
+                      />
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">6.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">KÖP</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">Varukorg</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">Varor</span>
+                <span class="cart-price cart-header cart-column">Pris</span>
+                <span class="cart-quantity cart-header cart-column">Antal</span>
+            </div>
+            <div class="cart-items">
+                <div class="cart-row">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="../images/banan.webp" width="100" height="100">
+                        <span class="cart-item-title">Banan</span>
+                    </div>
+                    <span class="cart-price cart-column">19.99</span>
+                    <div class="cart-quantity cart-column">
+                        <input class="cart-quantity-input" type="number" value="3">
+                        <button class="btn btn-danger" type="button">Tabort</button>
+                    </div>
+                </div>
+                <div class="cart-row">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="../images/Apelsin.png" width="100" height="100">
+                        <span class="cart-item-title">Apelsin</span>
+                    </div>
+                    <span class="cart-price cart-column">2.99</span>
+                    <div class="cart-quantity cart-column">
+                        <input class="cart-quantity-input" type="number" value="3">
+                        <button class="btn btn-danger" type="button">Tabort</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">39.97</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">Gå Till Kassa</button>
+        </section>
+       <!-- **** Footer Section **** -->
+        <footer class="footer navbar-static-bottom">
+            <div class="container">
+            <p class="footer__text">
+                © 2024 - MaxAI & Innovation          
+            </p>    
+            </div>
+        </footer>
+         <!-- Länka JavaScript-filen -->
+        <script src="../Script/frukt.js"></script>
+    </body>
 </html>
